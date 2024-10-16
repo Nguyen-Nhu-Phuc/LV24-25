@@ -45,8 +45,15 @@ export default {
       }
     },
     goToDetail(item) {
-      this.$router.push({ name: 'gameDetail', params: { id: item.id, game: item } });
-    },
+      console.log(item);  // Kiểm tra xem 'item' có 'id' hay không
+      if (item && item.id) {
+        this.$router.push({ name: 'gameDetail', params: { id: item.id } });
+      } else {
+        console.error('Invalid item or missing id');
+      }
+    }
+
+    ,
   },
 };
 </script>

@@ -6,7 +6,7 @@
           <h2 class="heading">{{ game.name }}</h2>
         </v-col>
         <v-col cols="12">
-          <v-img :src="getImagePath(game.imgPath)" alt="Game Image" height="400px"></v-img>
+          <v-img :src="getImagePath(this.game?.imgPath)" alt="Game Image" height="400px"></v-img>
         </v-col>
         <v-col cols="12">
           <!-- Preparation Section -->
@@ -48,6 +48,11 @@ export default {
   },
   mounted() {
     this.fetchGameDetail();
+    console.log(import.meta.env.VITE_API_URL)
+    // console.log(import.meta.url)
+  },
+  created() {
+    console.log(import.meta.url)
   },
   methods: {
     async fetchGameDetail() {
@@ -64,9 +69,13 @@ export default {
         console.error('Error fetching data:', error);
       }
     },
+
     getImagePath(imgPath) {
+
+      // return new URL(`${process.env.VUE_APP_URL}/${imgPath}`)
       // Sử dụng require để đảm bảo ảnh được load đúng cách
-      return new URL(`../${imgPath}`, import.meta.url).href;
+      const path = ((new URL(`../${imgPath}`, import.meta.url).origin) + '/' + `${imgPath}`)
+      return path;
     }
   },
 };
