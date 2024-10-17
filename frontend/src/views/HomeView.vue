@@ -10,9 +10,8 @@
       <v-row v-if="jsonData">
         <v-col cols="3" v-for="item in jsonData" :key="item.id">
           <v-card @click="goToDetail(item)" class="game-card">
-            <v-img :src="item.imgPath" alt="img folk game" height="200px"></v-img>
+            <v-img :src="item.imgPath" alt="img folk game" height="100%"></v-img>
             <v-card-title class="text-h6" style="text-align: center;">{{ item.name }}</v-card-title>
-            <v-card-subtitle style="text-align: center;">{{ item.gameplay }}</v-card-subtitle>
           </v-card>
         </v-col>
       </v-row>
@@ -60,10 +59,19 @@ export default {
 
 <style scoped>
 .heading {
+  /* border: 2px solid #007cc2; */
+  /* border-radius: 5px; */
   text-align: center;
 }
 
 .game-card {
+  /* border: 1px solid #007cc2; */
+  /* border-radius: 5px; */
   cursor: pointer;
+}
+
+.text-h6 {
+  /* border: 1px solid #007cc2; */
+  /* border-radius: 5px; */
 }
 </style>

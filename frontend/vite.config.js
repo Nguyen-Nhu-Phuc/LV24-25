@@ -12,4 +12,5 @@ export default defineConfig({
   define: {
     'import.meta.ABC': JSON.stringify('http://localhost:5173'),
   },
+
 });

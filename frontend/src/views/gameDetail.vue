@@ -1,5 +1,5 @@
 <template>
-  <div class="game-detail" v-if="game">
+  <div v-if="game">
     <v-container>
       <v-row>
         <v-col cols="12">
@@ -9,25 +9,20 @@
           <v-img :src="getImagePath(this.game?.imgPath)" alt="Game Image" height="400px"></v-img>
         </v-col>
         <v-col cols="12">
-          <!-- Preparation Section -->
           <h3 class="sub-heading">Preparation</h3>
           <ul>
             <li v-for="(prep, index) in game.gameplay.Preparation" :key="index">{{ prep }}</li>
-          </ul>
-
-          <!-- How to Play Section -->
+          </ul>>
           <h3 class="sub-heading">How to Play</h3>
           <ul>
             <li v-for="(playStep, index) in game.gameplay['How to Play']" :key="index">{{ playStep }}</li>
           </ul>
 
-          <!-- Rules Section -->
           <h3 class="sub-heading">Rules</h3>
           <ul>
             <li v-for="(rule, index) in game.gameplay.Rules" :key="index">{{ rule }}</li>
           </ul>
 
-          <!-- Significance Section -->
           <h3 class="sub-heading">Significance</h3>
           <ul>
             <li v-for="(significance, index) in game.gameplay.Significance" :key="index">{{ significance }}</li>
@@ -40,10 +35,10 @@
 
 <script>
 export default {
-  props: ['id'], // Nhận id từ router
+  props: ['id'],
   data() {
     return {
-      game: null, // Lưu trữ thông tin trò chơi
+      game: null,
     };
   },
   mounted() {
@@ -82,6 +77,8 @@ export default {
 </script>
 
 <style scoped>
+/* From Uiverse.io by kennyotsu-monochromia */
+
 .heading {
   text-align: center;
   margin-bottom: 20px;

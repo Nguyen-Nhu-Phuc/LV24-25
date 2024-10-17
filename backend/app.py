@@ -90,7 +90,7 @@ def predict_label():
 
     return jsonify({
         'detected_cls': list(detected_cls),
-        # 'distances': distances_jaccard,
+        'min_index_jaccard': min_index_jaccard,
         'predicted_label': predicted_game,
         'detected_images': detected_imgs
     })

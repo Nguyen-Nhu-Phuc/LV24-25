@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "imgPath": "src/assets/bag-jumping1.jpg",
+    "imgPath": "src/assets/NBB.jpg",
     "name": "Bag Jumping",
     "gameplay": {
       "Preparation": [
@@ -25,7 +25,7 @@
   },
   {
     "id": 2,
-    "imgPath": "src/assets/Bay-Nui-cow-racing.jpg",
+    "imgPath": "src/assets/DBBN.jpg",
     "name": "Bay Nui Cow Racing",
     "gameplay": {
       "Preparation": [
@@ -49,7 +49,7 @@
   },
   {
     "id": 3,
-    "imgPath": "src/assets/Blindfolded-duck-catching.jpg",
+    "imgPath": "src/assets/BMBV.jpg",
     "name": "Blindfolded Duck Catching",
     "gameplay": {
       "Preparation": [
@@ -75,7 +75,7 @@
   },
   {
     "id": 4,
-    "imgPath": "src/assets/Blindfolded-pig-catching.jpg",
+    "imgPath": "src/assets/BMBL.jpg",
     "name": "Blindfolded Pig Catching",
     "gameplay": {
       "Preparation": [
@@ -99,7 +99,7 @@
   },
   {
     "id": 5,
-    "imgPath": "src/assets/Boat-racing.jpg",
+    "imgPath": "src/assets/DT.jpg",
     "name": "Boat Racing",
     "gameplay": {
       "Preparation": [
@@ -143,7 +143,7 @@
   },
   {
     "id": 7,
-    "imgPath": "src/assets/Cockfighting.jpg",
+    "imgPath": "src/assets/CG.jpg",
     "name": "Cockfighting",
     "gameplay": {
       "Preparation": [
@@ -225,7 +225,7 @@
   },
   {
     "id": 11,
-    "imgPath": "src/assets/tug-of-war.jpg",
+    "imgPath": "src/assets/KC.jpg",
     "name": "Tug of War",
     "gameplay": {
       "Preparation": [
